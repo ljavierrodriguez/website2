@@ -1,0 +1,228 @@
+/* CSS Document */
+/* 
+
+selector {
+    property: value;
+}
+
+*/
+/* Specificity: (0, 0, 0) (ID, CLASS, TAG) */
+
+/* Selector Universal */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* Selector ID */
+
+#titulo {
+    color: blue;
+}
+
+/* Selector Clase */
+
+.titulo {
+    color: blueviolet;
+    font-size: 2rem;
+}
+
+.menu {
+    color: brown;
+}
+
+.title {
+    color: cadetblue;
+    text-transform: uppercase;
+}
+
+.top {
+    border: 1px solid #000000;
+    margin: 20px;
+}
+
+
+/* Selector Etiqueta o Tag */
+
+p {
+    text-align: justify;
+    color: chocolate;
+    margin: 10px;
+}
+
+li {
+    color: green;
+}
+
+h1, h2, h3 {
+    color: black;
+}
+
+h4, h5, h6 {
+    color: gray;
+}
+
+/* Selector Descendiente */
+
+.top h4 {
+    color: brown;
+    font-size: 30px;
+}
+
+.top ul li {
+    list-style: none;
+}
+
+/* Selector Adyacente */
+
+.top + p {
+    color: red;
+}
+
+h3 + p {
+    color: cornflowerblue;
+    font-style: italic;
+}
+
+
+/* Selector Hijo */
+
+div > a {
+    text-decoration: none;
+    color: gold;
+}
+
+div > .enlaces > a {
+    text-decoration: none;
+    color: green
+}
+
+/* Selector Hermano */
+
+h4 ~ p {
+    text-transform: capitalize;
+    color: fuchsia;
+}
+
+/* Selector de Atributo */
+
+/* que tenga el atributo href presente */
+.nav a[href] {
+    color: blue;
+}
+
+/* que tenga el atributo href presente con el valor indicado */
+.nav a[href="https://google.cl"] {
+    color: red;
+}
+
+/* que tenga el atributo class presente con el valor indicado*/
+.nav a[class="facebook"]{
+    color: cornflowerblue;
+}
+
+/* que tenga el atributo href presente y contenga el valor indicado */
+.nav a[href*="https"]{
+    color: burlywood;
+}
+
+/* que tenga el atributo href presente y el valor comience con el valor indicado */
+.nav a[href^="http"]{
+    color: brown;
+}
+
+/* que tenga el atributo href presente y el valor termine con el valor indicado */
+.nav a[href$=".html"]{
+    color: green;
+}
+
+/* que tenga el atributo class presente y el valor contenga el valor indicado */
+.nav a[class~="link3"] {
+    text-transform: uppercase;
+}
+
+
+
+/* Pseudo Clases */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+}
+
+.box:hover {
+    background-color: blueviolet;
+    color: gray;
+    cursor: pointer;
+}
+
+p:hover {
+    color: gray;
+}
+
+#f_css{
+    border: 10px;
+    border: 10px solid blue;
+}
+
+#f_css:checked {
+    border: 10px solid red;
+}
+
+.cards {
+    margin: 30px auto;
+    background-color: green;
+    width: 50%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid red;
+    margin: 5px;
+    width: 50px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 5px #000000;
+}
+
+.spades::before {
+    content: "\2660";
+    width: 100%;
+    height: 50px;
+}
+
+.spades::after {
+    content: "\2660";
+    width: 100%;
+    transform: rotate(180deg);
+    height: 50px;
+}
+
+.spades:hover {
+    transform: scale(1.5);
+}
+
+.cubs::before {
+    content: "\2663";
+    width: 100%;
+    height: 50px;
+}
+
+.cubs::after {
+    content: "\2663";
+    width: 100%;
+    transform: rotate(180deg);
+    height: 50px;
+}
+
+.cubs:hover {
+    transform: scale(1.5);
+}
